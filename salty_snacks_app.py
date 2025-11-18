@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 @st.cache_data
 def load_data():
     # Use your working file path
-    df = pd.read_excel("/Users/joseph/Downloads/Salty Snack Market Data Fall 2025.xlsx")
+    df = pd.read_excel("Salty Snack Market Data Fall 2025.xlsx")
 
     # Filter to UPC level only
     df_upc = df[df["Product Level"] == "UPC"].copy()
